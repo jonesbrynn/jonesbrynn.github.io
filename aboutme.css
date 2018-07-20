@@ -35,7 +35,7 @@ body{
     right: 0;
     position: absolute;
     background-image:url(http://i.imgur.com/kShChV6.png);
-    transition: opacity .5s ease-in-out; /* webkit is for the sake of the transition working on Safari*/
+    transition: opacity .5s ease-in-out; 
     z-index: 2;
 }
 
