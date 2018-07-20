@@ -1,0 +1,153 @@
+/*
+color palette
+light purple: #DBDBDB
+pastel purple: #D0BCC8
+light pink: #FCECDD
+pastel pink: #F6C8CA
+pastel blue: #EBF4F3
+*/
+
+@font-face{
+  font-family: SF Movie Poster Regular;
+  src: url('SF Movie Poster.ttf');
+}
+
+body{
+  background-color: #d8b5a7;
+}
+
+.imgHolder {
+    position: fixed;
+    width: 260px;
+    height: 444px;
+    margin-left: -7px;
+    margin-top: 265px;
+    display: block;
+    cursor: pointer;
+}
+
+/*Initial image*/
+ .imgHolder::before {
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url(http://i.imgur.com/vov1dTN.png);
+    background-repeat: no-repeat;
+    transition: opacity .5s ease-in-out; /* webkit is for the sake of the transition working on Safari*/
+    z-index: 2;
+}
+
+.Home{
+  position: fixed;
+  margin-top: 230px;
+  margin-left: 200px;
+  width: 250px;
+  height: 80px;
+}
+
+.imgHolder:hover::before {
+    opacity:0;
+}
+
+img{
+  width: 450px;
+  height: 250px;
+}
+
+.imgHolder::after {
+    content:"";
+    background: url(http://i.imgur.com/A5V7NwI.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+div.background{
+  position: relative;
+  float: right;
+  background-color: #FFFAF0;
+  border: white;
+  margin-bottom: 50px;
+  margin-top: 130px;
+  margin-right: 250px;
+  width: 500px;
+  height: 450px;
+}
+
+div.main{
+  position: relative;
+  background-color: rgba(	216, 167, 178, 0.5);
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  width: auto;
+  height: 400px;
+}
+
+div.background2{
+  position: relative;
+  float: right;
+  background-color: #FFFAF0;
+  border: white;
+  margin-bottom: 50px;
+  margin-right: 250px;
+  width: 500px;
+  height: 450px;
+}
+
+div.main2{
+  position: relative;
+  background-color: rgba(	216, 167, 178, 0.5);
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  width: auto;
+  height: 400px;
+}
+
+h1{
+  position: absolute;
+  margin-top: -32px;
+  font-family: "SF Movie Poster Regular";
+  letter-spacing: 3px;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "SF Movie Poster Regular";
+  letter-spacing: 3px;
+  margin-top: 5px;
+  line-height: 10px;
+}
+
+p{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "segoe ui light";
+  font-size: 10px;
+  line-height: 11px;
+}
+
+span.highlight{
+  color: #AAA4AA;
+  letter-spacing: 3px;
+}
+
+p.highlight{
+  color: #F9FBFB;
+  font-family: "segoe ui light";
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  text-transform: uppercase;
+}
