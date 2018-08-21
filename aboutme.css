@@ -22,7 +22,7 @@ body{
     display: block;
     position: fixed;
     margin-left: 80px;
-    margin-top: 309px;
+    margin-top: 400px;
     cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ body{
     right: 0;
     position: absolute;
     background-image:url(http://i.imgur.com/kShChV6.png);
-    transition: opacity .5s ease-in-out; 
+    transition: opacity .5s ease-in-out;
     z-index: 2;
 }
 
